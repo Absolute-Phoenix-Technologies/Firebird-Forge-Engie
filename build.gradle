@@ -1,0 +1,17 @@
+subprojects {
+    apply plugin: 'java'
+
+    repositories {
+        mavenCentral()
+        maven { url 'https://jitpack.io' }
+    }
+
+    tasks.register('generateJavadoc', Javadoc) {
+        destinationDir = file(getLayout().getBuildDirectory().toString() + "/docs/javadoc")
+        source = sourceSets.main.allJava
+    }
+
+    dependencies {
+
+    }
+}

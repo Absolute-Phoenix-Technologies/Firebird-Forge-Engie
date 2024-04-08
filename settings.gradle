@@ -1,0 +1,3 @@
+rootProject.name = 'Firebird-Forge-Engine'
+
+include 'Firebird-Forge-Core', 'Firebird-Forge-Discord', 'Firebird-Forge-Test'
